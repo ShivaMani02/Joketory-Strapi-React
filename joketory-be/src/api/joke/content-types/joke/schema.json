@@ -1,0 +1,38 @@
+{
+  "kind": "collectionType",
+  "collectionName": "jokes",
+  "info": {
+    "singularName": "joke",
+    "pluralName": "jokes",
+    "displayName": "joke"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "content": {
+      "type": "text",
+      "required": true
+    },
+    "uploadedTime": {
+      "type": "datetime"
+    },
+    "category": {
+      "type": "string",
+      "required": true
+    },
+    "isPublished": {
+      "type": "boolean",
+      "default": true,
+      "required": true
+    },
+    "auther": {
+      "type": "string",
+      "default": "Shivansh"
+    }
+  }
+}
